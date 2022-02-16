@@ -1,3 +1,4 @@
+<!-- 
 -[Encyclopedia.lua]------------------------
 	This is a framework, created by 'foshes'. This is what powers most of my games. Feel free to
 	use it, fork it, and do whatever you want with it. This is meant to be a community-driven framework. 
@@ -8,7 +9,7 @@
 	
 [HOW TO USE]:
 	[SERVER]:
-    Parent Encyclopedia to some Script.
+    		Parent Encyclopedia to some Script.
     
 		[INITIALIZE]: -- some Script
 			local Encyclopedia = require(script.Encyclopedia)
@@ -23,6 +24,6 @@
 			
 		[OTHER SCRIPTS]:
 			local Encyclopedia = _G.Encyclopedia
-
+ -->
 
 
