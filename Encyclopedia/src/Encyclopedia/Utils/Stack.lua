@@ -96,7 +96,7 @@ function Stack:IsEmpty()
 end
 
 function Stack:Push(e)
-	assert(Stack:IsActive() == true, 
+	assert(self:IsActive() == true, 
 		SETTINGS.Exception.InactiveStackException)
 		
 	table.insert(self._stack, e)
@@ -105,7 +105,7 @@ function Stack:Push(e)
 end
 
 function Stack:Pop()
-	assert(Stack:IsActive() == true, 
+	assert(self:IsActive() == true, 
 		SETTINGS.Exception.InactiveStackException)
 	assert(self:IsEmpty() == false, 
 		SETTINGS.Exception.EmptyStackException)
@@ -116,7 +116,7 @@ function Stack:Pop()
 end
 
 function Stack:Peek()
-	assert(Stack:IsActive() == true, 
+	assert(self:IsActive() == true, 
 		SETTINGS.Exception.InactiveStackException)
 	assert(self:IsEmpty() == false, 
 		SETTINGS.Exception.EmptyStackException)
@@ -125,7 +125,7 @@ function Stack:Peek()
 end
 
 function Stack:Search(e)
-	assert(Stack:IsActive() == true, 
+	assert(self:IsActive() == true, 
 		SETTINGS.Exception.InactiveStackException)
 	
 	return table.find(self._stack, e) or -1
@@ -136,7 +136,7 @@ function Stack:IsActive()
 end
 
 function Stack:Clean()
-	assert(Stack:IsActive() == true, 
+	assert(self:IsActive() == true, 
 		SETTINGS.Exception.InactiveStackException)
 	
 	self._cleaned = true
