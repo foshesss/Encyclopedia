@@ -89,7 +89,7 @@ function Stack.new()
 end
 
 function Stack:IsEmpty()
-	assert(Stack:IsActive() == true, 
+	assert(self:IsActive() == true, 
 		SETTINGS.Exception.InactiveStackException)
 	
 	return #self._stack == 0
