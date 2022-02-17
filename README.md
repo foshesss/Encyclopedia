@@ -27,5 +27,3 @@ As for service containers:
 
 * SharedServices: non-exclusive; server and client can access
 * Services: exclusive to server
-
-Users worried about the Services container being accessible to clients can easily change the folder's location (if script modifications are made accordingly).
