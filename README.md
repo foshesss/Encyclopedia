@@ -1,26 +1,31 @@
-
-This is a framework, created by 'foshes'. This is what powers most of my games. Feel free to
+# Encyclopedia
+This is a framework, created by foshes. This is what powers most of my games. Feel free to
 use it, fork it, and do whatever you want with it. This is meant to be a community-driven framework. 
 Utilities will be added frequently, as voted by the community.
-  
-  Join the discussion: 
-    https://discord.gg/STzsSyBRNB
-	
-How to use:
 
-[SERVER]:
+## Community
+Questions? [Join our Discord!](https://discord.gg/STzsSyBRNB) 
+    
+## Setup
 
-	[INITIALIZE]: -- some Script
-		local Encyclopedia = require(script.Encyclopedia)
+Encyclopedia is meant to be required *at least* once on both server and client to initialize their respective global containers. Encyclopedia is designed to exist in a shared container, so recommended practice is to place Encyclopedia in ReplicatedStorage.
 
-	[OTHER SCRIPTS]:
-		local Encyclopedia = _G.Encyclopedia
+Server/Client:
+```lua
+local Encyclopedia = require(path.to.Encyclopedia)
+```
 
-[CLIENT]:
+The global container can be referenced via `_G.Encyclopedia`.
 
-	[INITIALIZE]: -- some LocalScript
-		local ReplicatedStorage = game:GetService("ReplicatedStorage")
-		local Encyclopedia = require(ReplicatedStorage.Encyclopedia)
+The return value of the Encyclopedia require and global container value are identical. To avoid issues with cyclic requires, use of the global container is recommended.
 
-	[OTHER SCRIPTS]:
-		local Encyclopedia = _G.Encyclopedia 
+## Usage
+
+Instead of using the native `:GetService` method, recommended Encyclopia practice is to instead use the `Encyclopedia.GetService` function which will return both native services and modules housed in the SharedServices and Services folder.
+
+As for service containers:
+
+* SharedServices: non-exclusive; server and client can access
+* Services: exclusive to server
+
+Users worried about the Services container being accessible to clients can easily change the folder's location (if script modifications are made accordingly).
