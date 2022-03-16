@@ -1,7 +1,5 @@
 # Encyclopedia
-This is a framework, created by foshes. This is what powers most of my games. Feel free to
-use it, fork it, and do whatever you want with it. This is meant to be a community-driven framework. 
-Utilities will be added frequently, as voted by the community.
+This is a framework, created by foshes. Feel free to use it, fork it, and do whatever you want with it. This is meant to be a community-driven framework. Utilities will be added frequently, as voted by the community.
 
 ## Community
 Questions? [Join our Discord!](https://discord.gg/STzsSyBRNB) 
@@ -21,7 +19,7 @@ The return value of the Encyclopedia require and global container value are iden
 
 ## Usage
 
-Instead of using the native `:GetService` method, recommended Encyclopia practice is to instead use the `Encyclopedia.GetService` function which will return both native services and modules housed in the SharedServices and Services folder.
+Instead of using the native `:GetService` method, recommended Encyclopedia practice is to instead use the `Encyclopedia.GetService` function which will return both native services and modules housed in the SharedServices and Services folder.
 
 As for service containers:
 
