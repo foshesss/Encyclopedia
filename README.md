@@ -27,5 +27,5 @@ As for service containers:
 * Services: exclusive to server
 
 RBXM File (unzip for RBXM) 
-[Encyclopedia.zip](https://github.com/foshesss/Encyclopedia/files/8119068/Encyclopedia.zip)
+[Encyclopedia.zip](https://github.com/foshesss/Encyclopedia/files/8294525/Encyclopedia.zip)
 
